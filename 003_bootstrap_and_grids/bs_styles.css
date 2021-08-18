@@ -1,0 +1,89 @@
+.carousel-container {
+    width: 1280px;
+    margin: 50px auto;
+    min-height: 200px;
+    /* position: relative; */
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .carousel-container {
+      width: 85%;
+    }
+  }
+
+carousel-container .carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-container .track {
+    display: flex;
+}
+
+.carousel-container .card-container {
+    width: 427px;
+    height: 250px;
+    flex-shrink: 0;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.carousel-container .card-container .card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(30%);
+}
+
+.carousel-container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .prev {
+    /* left: -40px; */
+    background-color: white;
+}
+
+.nav .next {
+    /* right: -40px; */
+    background-color: white;
+}
+
+.card > * {
+    flex: 1;
+}
+
+.card .cc-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card .info {
+    flex-basis: 40px;
+    background: #333;
+    color: white;
+    flex-grow: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}

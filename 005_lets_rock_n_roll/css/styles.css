@@ -3,34 +3,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&display=swap');
 
 /* Components Design */
-@import url("components/alert.css");
-@import url("components/avatar.css");
-@import url("components/banner.css");
+
+
 @import url("components/button.css");
-@import url("components/card-category.css");
-@import url("components/card-product.css");
-@import url("components/card-trip.css");
+@import url("components/card-skill.css");
+@import url("components/experience-card.css");
 @import url("components/container.css");
 @import url("components/footer.css");
 @import url("components/navbar.css");
-@import url("components/notification.css");
-@import url("components/search-form.css");
-@import url("components/tabs.css");
+
+@import url("components/home-styling.css");
+@import url("components/skills-styling.css");
+@import url("components/about-styling.css");
+
 
 body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Open Sans', 'Helvetica' 'sans-serif'; */
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     margin: 0;
-    background-color: #faf1e6;
+    /* background-color: #faf1e6; */
 
     /* min-height: 100vh;
     display: flex;
     flex-direction: column; */
+    height: 100vh;
 }
 
 h1, h2, h3 {
     font-family: 'Poppins', 'sans-serif';
+}
+
+h3 {
+    font-size: 16px;
+    color: #717171;
+}
+
+p {
+    color: #717171;
+    font-size: 14px;
 }
 
 .text-center {
@@ -40,3 +51,18 @@ h1, h2, h3 {
 a {
     text-decoration: none;
 }
+
+li {
+    font-size: 14px;
+}
+
+h4 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.black {
+    color: black;
+}
+

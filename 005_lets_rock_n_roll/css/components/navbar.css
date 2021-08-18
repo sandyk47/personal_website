@@ -1,0 +1,38 @@
+.navbar {
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #f0f0f0;
+  
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:100;
+
+}
+
+.nav-inner {
+  padding: 8px;
+}
+
+.navbarbar .navbar-inner {
+  flex-grow: 0;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu-items {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
