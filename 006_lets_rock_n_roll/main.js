@@ -1,4 +1,4 @@
-let span = document.getElementsByTagName('span');
+let span = document.getElementsByClassName('carousel-nav');
 let company = document.getElementsByClassName('company')
 let company_page = Math.ceil(company.length/4);
 let l = 0;
