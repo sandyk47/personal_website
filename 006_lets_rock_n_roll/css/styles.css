@@ -16,10 +16,11 @@
 @import url("home-segments/home-styling.css");
 @import url("home-segments/skills-styling.css");
 @import url("home-segments/about-styling.css");
-@import url("home-segments/contact-styling.css");
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -54,6 +55,12 @@ p {
 
 a {
     text-decoration: none;
+    color: #3bb5d7;
+    transition-duration: .3s;
+}
+
+a:hover {
+    color: #b6c869;
 }
 
 li {
@@ -70,3 +77,6 @@ h4 {
     color: black;
 }
 
+.s12 {
+    font-size: 12px;
+}
