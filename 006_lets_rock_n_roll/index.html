@@ -1,15 +1,28 @@
 <html>
   <head>
-
-
     <meta charset="utf08" />
     <title>Alexander Kelso</title>
-    <script src="https://kit.fontawesome.com/164ac97590.js" crossorigin="anonymous"></script>
-
     
+    <!-- METADATA -->
+    <meta name="description" content="Alexander Kelso: Fintech enthusiast and professional consultant with full stack capabilities assisting global businesses since 2015">
+    <meta property="og:title" content="Alexander Kelso: Fintech Enthusiast & Professional Consultant">
+    <meta property="og:image" content="images/alex.jpg">
+    <meta property="og:description" content="Helping businesses achieve excellent results since 2014. Check out Alex's online CV.">
+    <meta property="og:site_name" content="Alexander Kelso"/>    
+    
+    <!-- # JAVASCRIPT IMPORTS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- CSS & SYLE IMPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
-
+    <script src="https://kit.fontawesome.com/164ac97590.js" crossorigin="anonymous"></script>
+    
     
 
 
@@ -19,520 +32,534 @@
 
 
     <!-- #################################### NAVBAR -->
-    <div class="navbar">
-      <div class="nav-inner">
-        <div class="container">
-          <ul class=menu-items>
-            <li>Home</li>
-            <li>Skills</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+    <!-- <div class="navbar">
+      <div class="nav-inner"> -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li class="home active"><a href="#home">Home</a></li>
+          <li class="skills"><a href="#skills">Skills</a></li>
+          <li class="about"><a  href="#about">About</a></li>
+          <li class="contact"><a  href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
+
+      <!-- </div>
+    </div> -->
 
     <!-- #################################### HOME PAGE -->
+    <div class="mt-3"></div>
 
-    <div class="full-container">
-      <div class="container inner-full-container">
-        <div class="center-container row d-flex">
-          <div class="col-sm-12 col-md-7 home-greeting">
-            <h2>👋</h2>
-            <h2>Hello, I am Alex Kelso</h2>
-            <p>I am a fintech enthusiast with full-stack tech capabilities and six years of experience consulting with global businesses. I love surfing and rock climbing, and I am passionate about digital and financial inclusion.</p>
+    <section id="home">
+      <div class="full-container" id="home">
+        <div class="container inner-full-container">
+          <div class="center-container row d-flex">
+            <div class="col-sm-12 col-md-7 home-greeting">
+              <h2>👋</h2>
+              <h2>Hello, I am Alex Kelso</h2>
+              <p>I am a fintech enthusiast with full-stack tech capabilities and six years of experience consulting with global businesses. I love surfing and rock climbing, and I am passionate about digital and financial inclusion.</p>
+            </div>
+            <img src="images/alex.jpg" class="col-sm-12 col-md-5 mt-3" alt="">  
           </div>
-          <img src="images/alex.jpg" class="col-sm-12 col-md-4 mt-3" alt="">  
         </div>
       </div>
-    </div>
+    </section>
+
 
     <!-- #################################### SKILLS PAGE -->
-
-    <div class="container pb-5">
-      <div class="border-bottom">
-        <h2>✍️‍ Skills</h2>
+    <section id="skills">
+      <div class="mt-5"></div>
+      <div class="container pb-5">
+        <div class="border-bottom">
+          <h2 class="navbar-buffer">✍️‍ Skills</h2>
+        </div>
+        <div id="skills-container">
+          <!-- #################################### Fintech Card -->
+          <div class="container">
+            <div class="skill-card light-blue">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="skill-card-left col-sm-12 col-md-5">
+                    <div class="skill-heading d-flex">
+                      <img src="images/fintech.png" alt="placeholder">
+                      <h3 class="pl-3" >Fintech & Development</h3>
+                    </div>
+                    <p class="skill-bio">
+                      In recent years, I have armed my finacial foundations with up-to-date training across numerous cutting-edge financial technologies.
+                    </p>
+                  </div>
+                  <div class="skill-card-right d-flex col-sm-12 col-md-7">
+                    <ul class=skill-list>
+                      <li>  Python & Pandas </li>
+                      <li>  APIs </li>
+                      <li>  Quantitative Analysis </li>
+                      <li>  Financial Model Building </li>
+                      <li>  Machine Learning </li>
+                      <li>  Deep Learning </li>
+                      <li>  Natural Language Processing </li>
+                      <li>  Relational Databases (SQL & ORM) </li>
+                    </ul>
+                    <ul class=skill-list>
+                      <li> Big Data Analytics </li>
+                      <li> Cloud Technologies </li>
+                      <li> ERP Systems </li>
+                      <li> Customer Service Bots </li>
+                      <li> Algorithmic Trading </li>
+                      <li> DLT, Blockchain & Cryptocurrencies </li>
+                      <li> Solidity </li>
+                      <li> HTML, CSS & Javascript </li>
+                      <li>  Ruby on Rails </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- #################################### Business Analysis Card -->
+          <div class="container">
+            <div class="skill-card light-red">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="skill-card-left col-sm-12 col-md-5">
+                    <div class="skill-heading d-flex">
+                      <img src="images/data-research.png" alt="placeholder">
+                      <h3 class="pl-3" >Business Analysis</h3>
+                    </div>
+                    <p class="skill-bio">
+                      I have worked alongside ASX-listed companies and fast-growing tech startups; reimagining their operations and rolling out new solutions to boost profitability, performance and scaleability.
+                    </p>
+                  </div>
+                  <div class="skill-card-right d-flex col-sm-12 col-md-7">
+                    <ul class=skill-list>
+                      <li>‘As Is’ and ‘To Be’  Process Mapping</li>
+                      <li>User Experience Analysis</li>
+                      <li>Generating Business Cases,<br>Work Plans & Project Scopes</li>
+                      <li>Stakeholder Identification,<br>Negotiation & Roles (RACI)</li>
+                      <li>User Acceptance Testing</li>
+                    </ul>
+                    <ul class=skill-list>
+                      <li>Project Review / Analysis</li>
+                      <li>Facilitating Workshops</li>
+                      <li><b>Requirement:</b> </li>
+                        <ul>
+                          <li>Elicitation</li>
+                          <li>Documentation </li>
+                          <li>Analysis</li>
+                          <li>Specification</li>
+                          <li>Approval</li>
+                        </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- #################################### Product & Project Management Card -->
+          <div class="container">
+            <div class="skill-card light-green">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="skill-card-left col-sm-12 col-md-5">
+                    <div class="skill-heading d-flex">
+                      <img src="images/supply-chain.png" alt="placeholder">
+                      <h3 class="pl-3" >Product Management<br>& Project Management</h3>
+                    </div>
+                    <p class="skill-bio">
+                      Throughout my career, I have orchestrated the development and rollout of numerous operational & supply-chain trainsformation projects,  FMCG and tech products as well as dozens of eCommerce/digital portals
+                    </p>
+                  </div>
+                  <div class="skill-card-right d-flex col-sm-12 col-md-7">
+                    <ul class=skill-list>
+                      <li>Jira, Monday & Basecamp</li>
+                      <li>Agile, Scrum, Incremental<br>& Waterfall Methodologies</li>
+                      <li>Idea & Requirements Analysis,<br>User Needs identification</li>
+                      <li>Competitive / Market Analysis</li>
+                      <li>Customer Development</li>
+                    </ul>
+                    <ul class=skill-list>
+                      <li> Designing & Running<br>Experiments</li>
+                      <li> Conceptualising Solutions</li>
+                      <li> Defining & Measuring<br>Success (HEART, AARRR)</li>
+                      <li> Roadmapping, Epics,<br>User Stories & Sprints</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <!-- #################################### Research & Strategy Development Card -->
+          <div class="container">
+            <div class="skill-card light-pink">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="skill-card-left col-sm-12 col-md-5">
+                    <div class="skill-heading d-flex">
+                      <img src="images/plan.png" alt="placeholder">
+                      <h3 class="pl-3" >Research & Strategy Development</h3>
+                    </div>
+                    <p class="skill-bio">
+                      I have conducted research and strategy projects for automotive manufacturers, supermarket chains, cider brewers, apparel retailers, universities, wineries, big pharma companies and many others.
+                    </p>
+                  </div>
+                  <div class="skill-card-right d-flex col-sm-12 col-md-7">
+                    <ul class=skill-list>
+                      <li>Research Study design</li>
+                      <li>Gap Analysis</li>
+                      <li>User Need, Business Impact,<br>Feasibility Analysis</li>
+                      <li>Human-Centred Design Analysis</li>
+                      <li>Web Scraping</li>
+                      <li>Big Data Analysis</li>
+                    </ul>
+                    <ul class=skill-list>
+                      <li>Quantitative Research</li>
+                      <li>Desk & Field Research</li>
+                      <li>Qualitative Research<br>(Focus Groups, interviews)</li>
+                      <li>Running Workshops<br>& Presentations</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- #################################### Productivity & CRM Card -->
+          <div class="container">
+            <div class="skill-card light-blue">
+              <div class="container p-3">
+                <div class="row">
+                  <div class="skill-card-left col-sm-12 col-md-5">
+                    <div class="skill-heading d-flex">
+                      <img src="images/time-management.png" alt="placeholder">
+                      <h3 class="pl-3" >Productivity & CRM</h3>
+                    </div>
+                    <p class="skill-bio">
+                      My experiences have fostered a strong customer-centric mindset, a deep-seeded sense of urgency as well as impeccable communication and organisation skills.
+                    </p>
+                  </div>
+                  <div class="skill-card-right d-flex col-sm-12 col-md-7">
+                    <ul class=skill-list>
+                      <li>Excel (Proficient)</li>
+                      <li>Powerpoint (Proficient)</li>
+                      <li>Word</li>
+                      <li>PowerBI</li>
+                      <li>Outlook & Gmail</li>
+                      <li>Slack</li>
+                    </ul>
+                    <ul class=skill-list>
+                      <li>Monday</li>
+                      <li>Google Workspace</li>
+                      <li>Zoho CRM</li>
+                      <li>Pipedrive</li>
+                      <li>Zapier</li>
+                      <li>Mailchimp</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        
+          
+        </div>
       </div>
-      <div id="skills-container">
-        <!-- #################################### Fintech Card -->
-        <div class="container">
-          <div class="skill-card light-blue">
-            <div class="container p-3">
-              <div class="row">
-                <div class="skill-card-left col-sm-12 col-md-5">
-                  <div class="skill-heading d-flex">
-                    <img src="images/fintech.png" alt="placeholder">
-                    <h3 class="pl-3" >Fintech & Development</h3>
-                  </div>
-                  <p class="skill-bio">
-                    In recent years, I have armed my finacial foundations with up-to-date training across numerous cutting-edge financial technologies.
-                  </p>
-                </div>
-                <div class="skill-card-right d-flex col-sm-12 col-md-7">
-                  <ul class=skill-list>
-                    <li>  Python & Pandas </li>
-                    <li>  APIs </li>
-                    <li>  Quantitative Analysis </li>
-                    <li>  Financial Model Building </li>
-                    <li>  Machine Learning </li>
-                    <li>  Deep Learning </li>
-                    <li>  Natural Language Processing </li>
-                    <li>  Relational Databases (SQL & ORM) </li>
-                  </ul>
-                  <ul class=skill-list>
-                    <li> Big Data Analytics </li>
-                    <li> Cloud Technologies </li>
-                    <li> ERP Systems </li>
-                    <li> Customer Service Bots </li>
-                    <li> Algorithmic Trading </li>
-                    <li> DLT, Blockchain & Cryptocurrencies </li>
-                    <li> Solidity </li>
-                    <li> HTML, CSS & Javascript </li>
-                    <li>  Ruby on Rails </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </section>
 
-        <!-- #################################### Business Analysis Card -->
-        <div class="container">
-          <div class="skill-card light-red">
-            <div class="container p-3">
-              <div class="row">
-                <div class="skill-card-left col-sm-12 col-md-5">
-                  <div class="skill-heading d-flex">
-                    <img src="images/data-research.png" alt="placeholder">
-                    <h3 class="pl-3" >Business Analysis</h3>
-                  </div>
-                  <p class="skill-bio">
-                    I have worked alongside ASX-listed companies and fast-growing tech startups; reimagining their operations and rolling out new solutions to boost profitability, performance and scaleability.
-                  </p>
-                </div>
-                <div class="skill-card-right d-flex col-sm-12 col-md-7">
-                  <ul class=skill-list>
-                    <li>‘As Is’ and ‘To Be’  Process Mapping</li>
-                    <li>User Experience Analysis</li>
-                    <li>Generating Business Cases,<br>Work Plans & Project Scopes</li>
-                    <li>Stakeholder Identification,<br>Negotiation & Roles (RACI)</li>
-                    <li>User Acceptance Testing</li>
-                  </ul>
-                  <ul class=skill-list>
-                    <li>Project Review / Analysis</li>
-                    <li>Facilitating Workshops</li>
-                    <li><b>Requirement:</b> </li>
-                      <ul>
-                        <li>Elicitation</li>
-                        <li>Documentation </li>
-                        <li>Analysis</li>
-                        <li>Specification</li>
-                        <li>Approval</li>
-                      </ul>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- #################################### Product & Project Management Card -->
-        <div class="container">
-          <div class="skill-card light-green">
-            <div class="container p-3">
-              <div class="row">
-                <div class="skill-card-left col-sm-12 col-md-5">
-                  <div class="skill-heading d-flex">
-                    <img src="images/supply-chain.png" alt="placeholder">
-                    <h3 class="pl-3" >Product Management<br>& Project Management</h3>
-                  </div>
-                  <p class="skill-bio">
-                    Throughout my career, I have orchestrated the development and rollout of numerous operational & supply-chain trainsformation projects,  FMCG and tech products as well as dozens of eCommerce/digital portals
-                  </p>
-                </div>
-                <div class="skill-card-right d-flex col-sm-12 col-md-7">
-                  <ul class=skill-list>
-                    <li>Jira, Monday & Basecamp</li>
-                    <li>Agile, Scrum, Incremental<br>& Waterfall Methodologies</li>
-                    <li>Idea & Requirements Analysis,<br>User Needs identification</li>
-                    <li>Competitive / Market Analysis</li>
-                    <li>Customer Development</li>
-                  </ul>
-                  <ul class=skill-list>
-                    <li> Designing & Running<br>Experiments</li>
-                    <li> Conceptualising Solutions</li>
-                    <li> Defining & Measuring<br>Success (HEART, AARRR)</li>
-                    <li> Roadmapping, Epics,<br>User Stories & Sprints</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- #################################### Research & Strategy Development Card -->
-        <div class="container">
-          <div class="skill-card light-pink">
-            <div class="container p-3">
-              <div class="row">
-                <div class="skill-card-left col-sm-12 col-md-5">
-                  <div class="skill-heading d-flex">
-                    <img src="images/plan.png" alt="placeholder">
-                    <h3 class="pl-3" >Research & Strategy Development</h3>
-                  </div>
-                  <p class="skill-bio">
-                    I have conducted research and strategy projects for automotive manufacturers, supermarket chains, cider brewers, apparel retailers, universities, wineries, big pharma companies and many others.
-                  </p>
-                </div>
-                <div class="skill-card-right d-flex col-sm-12 col-md-7">
-                  <ul class=skill-list>
-                    <li>Research Study design</li>
-                    <li>Gap Analysis</li>
-                    <li>User Need, Business Impact,<br>Feasibility Analysis</li>
-                    <li>Human-Centred Design Analysis</li>
-                    <li>Web Scraping</li>
-                    <li>Big Data Analysis</li>
-                  </ul>
-                  <ul class=skill-list>
-                    <li>Quantitative Research</li>
-                    <li>Desk & Field Research</li>
-                    <li>Qualitative Research<br>(Focus Groups, interviews)</li>
-                    <li>Running Workshops<br>& Presentations</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- #################################### Productivity & CRM Card -->
-        <div class="container">
-          <div class="skill-card light-blue">
-            <div class="container p-3">
-              <div class="row">
-                <div class="skill-card-left col-sm-12 col-md-5">
-                  <div class="skill-heading d-flex">
-                    <img src="images/time-management.png" alt="placeholder">
-                    <h3 class="pl-3" >Productivity & CRM</h3>
-                  </div>
-                  <p class="skill-bio">
-                    My experiences have fostered a strong customer-centric mindset, a deep-seeded sense of urgency as well as impeccable communication and organisation skills.
-                  </p>
-                </div>
-                <div class="skill-card-right d-flex col-sm-12 col-md-7">
-                  <ul class=skill-list>
-                    <li>Excel (Proficient)</li>
-                    <li>Powerpoint (Proficient)</li>
-                    <li>Word</li>
-                    <li>PowerBI</li>
-                    <li>Outlook & Gmail</li>
-                    <li>Slack</li>
-                  </ul>
-                  <ul class=skill-list>
-                    <li>Monday</li>
-                    <li>Google Workspace</li>
-                    <li>Zoho CRM</li>
-                    <li>Pipedrive</li>
-                    <li>Zapier</li>
-                    <li>Mailchimp</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        
-      </div>
-    </div>
 
 
     <!-- #################################### ABOUT PAGE -->
-    <div class="container pt-5">
-      <div class="border-bottom">
-        <h2>👨‍ About</h2>
-      </div>
-      <!-- #################################### main bio section -->
-      <div class="d-flex container about-container pt-4">
-        <div class="row">
-          <div class="about-left col-sm-12 col-md-6 mb-4">
-            <div class="border-bottom">
-               <h3>My Story</h3>
-            </div>
-            <p class="mb-0 mt-3">
-              I have been working as a commercial expert in China’s dynamic and complex tech industry since 2015. During this time, I’ve had the opportunity to work alongside some amazing people on several cutting edge products and projects. These include:
-            </p>  
-            <ul>
-              <li>Developing multi-million dollar omnichannel eCommerce businesses for Trilogy Natural Skincare, Flordis Pharmaceuticals and Celebrity Slim.</li>
-              <li>Supply chain and operational transformation projects for QBID, RooLife Group (ASX: RLG), Stratforms and Bubblegum Casting.</li>
-              <li>New Product Development (NPD) strategies for Woolworths, John West, QBID and Bubblegum Casting.</li>
-            </ul>
-            <p>
-              Along my journey, I have worn many hats, including product manager, project manager, business analyst, data analyst, researcher, developer and author.<br>
-              <br>
-              I am well practiced in managing cross-cultural teams to solve complex problems and achieve outstanding results. As a team leader, I strive to foster a supportive environment centred around innovation, upskilling and pushing out beyond comfort zones.
-            </p>  
-            <div class="border-bottom mt-4">
-               <h3>Where I've Studied</h3>
-            </div>
-
-            
-
-            <!-- #################################### Monash Card -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/monash_200png.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">Monash University</h4>
-                  <p class="mb-0 black">Fintech Bootcamp</p>
-                  <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- #################################### Le Wagon Card -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/le_wagon_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">Le Wagon</h4>
-                  <p class="mb-0 black">Web Development Course</p>
-                  <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- #################################### Unimelb Card -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/unimelb_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">University of Melbourne</h4>
-                  <p class="mb-0 black">Bachelor of Commerce (Finance)</p>
-                  <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="about-right col-sm-12 col-md-6">
-            <div class="border-bottom">
-               <h3>Where I’ve Worked / Consulted</h3>
-            </div>
-
-            <!-- #################################### RLG Card -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/rlg_logo.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">RLG (ASX: RLG)</h4>
-                  <p class="mb-0 black">[Consultant] Business Development, Operations,<br>Research, eCommerce Management, Development</p>
-                  <p class="mb-0">Perth, Western Australia (2020 - Present)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### Stratforms LLC -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/stratforms_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">Stratforms LLC</h4>
-                  <p class="mb-0 black">[Consultant] Operations & Supply-Chain<br>Transformation, Web Development</p>
-                  <p class="mb-0">Hong Kong (2020 - Present)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### Veta Group LLC -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/veta_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">VETA Group LLC</h4>
-                  <p class="mb-0 black">[Consultant] Supply-Chain Transformation</p>
-                  <p class="mb-0">Florida, USA (2019-2020)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### Bubblegum Casting -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/bubblegum_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">Bubblegum Casting</h4>
-                  <p class="mb-0 black">[Consultant] Operations & Technology Transformation,<br>Product Management</p>
-                  <p class="mb-0">Melbourne, Victoria (2020 - Present)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### Alibaba Group -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/alibaba_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">Alibaba Group</h4>
-                  <p class="mb-0 black">[Consultant] Curriculum Developer, Subject Matter Expert.</p>
-                  <p class="mb-0">Hangzhou, China (Aug - Dec 2019)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### China Skinny -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/china_skinny_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">China Skinny</h4>
-                  <p class="mb-0 black">Research Manager, Strategy Consultant</p>
-                  <p class="mb-0">Shanghai, China (2018-2019)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### QBID -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/qbid_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">QBID</h4>
-                  <p class="mb-0 black">eCommerce Consultant, Product Manager</p>
-                  <p class="mb-0">Melbourne Victoria / Guangzhou, China (2015-2018)</p>
-                </div>
-              </div>
-            </div>            
-            <!-- #################################### ANZ -->
-            <div class="experience-card d-flex">
-              <img src="images/experience_logos/anz_200.png" alt="">
-              <div class="experience-container">
-                <div class="experience-details pl-4">
-                  <h4 class="mb-0 mr-3">ANZ Bank</h4>
-                  <p class="mb-0 black">Corporate & Commercial Banking Trainee</p>
-                  <p class="mb-0">Perth, Western Australia (2014 - 2015)</p>
-                </div>
-              </div>
-            </div>            
-
-          </div>
+    <section id="about">
+      <div class="container pt-5">
+        <div class="border-bottom">
+          <h2 class="pt-2">👨‍ About</h2>
         </div>
-
-      </div>
-
-      <!-- #################################### clients I've delivered Projects For // CAROUSEL -->
-      <div class="container carousel-container">
-        <div class="sub-container pl-3 pr-3">
-          <div class="nav-menu border-bottom">
-            <h3>Clients I've Served</h3>
-            <p>
-              <span>&#139;</span>
-              <span>&#155;</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="main-carousel">
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/woolworths.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/westpac.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/reckitt.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/tourism_australia.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/saic.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/trilogy.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/arnotts.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/aft_pharma.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/aaco.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/hollister.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/thatchers.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/john_west.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/glanbia.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/melrose.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/sunrice.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/celebrity_slim.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/optipharm.png" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/ego.png	" alt="">
-            </picture>
-          </div>
-          <div class="company">
-            <picture>
-              <img src="images/clients_served/flordis.png" alt="">
-            </picture>
-          </div>
-        </div>
+        <!-- #################################### main bio section -->
+        <div class="d-flex container about-container pt-4">
+          <div class="row">
+            <div class="about-left col-sm-12 col-md-6 mb-4">
+              <div class="border-bottom">
+                 <h3>My Story</h3>
+              </div>
+              <p class="mb-0 mt-3">
+                I have been working as a commercial expert in China’s dynamic and complex tech industry since 2015. During this time, I’ve had the opportunity to work alongside some amazing people on several cutting edge products and projects. These include:
+              </p>  
+              <ul>
+                <li>Developing multi-million dollar omnichannel eCommerce businesses for Trilogy Natural Skincare, Flordis Pharmaceuticals and Celebrity Slim.</li>
+                <li>Supply chain and operational transformation projects for QBID, RooLife Group (ASX: RLG), Stratforms and Bubblegum Casting.</li>
+                <li>New Product Development (NPD) strategies for Woolworths, John West, QBID and Bubblegum Casting.</li>
+              </ul>
+              <p>
+                Along my journey, I have worn many hats, including product manager, project manager, business analyst, data analyst, researcher, developer and author.<br>
+                <br>
+                I am well practiced in managing cross-cultural teams to solve complex problems and achieve outstanding results. As a team leader, I strive to foster a supportive environment centred around innovation, upskilling and pushing out beyond comfort zones.
+              </p>  
+              <div class="border-bottom mt-4">
+                 <h3>Where I've Studied</h3>
+              </div>
+  
+              
+  
+              <!-- #################################### Monash Card -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/monash_200png.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Monash University</h4>
+                    <p class="mb-0 black">Fintech Bootcamp  <a href="https://media.trilogyed.com/Monash/pdf/Monash_fintech_curriculum.pdf" class="s12 pl-1" target="none"><i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
+                  </div>
+                </div>
+              </div>
   
   
-      </div>
-      
-    </div> 
+              <!-- #################################### Le Wagon Card -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/le_wagon_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Le Wagon</h4>
+                    <p class="mb-0 black">Web Development Course  <a href="https://www.lewagon.com/web-development-course/full-time#curriculum" class="s12 pl-1" target="none"><i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <!-- #################################### Unimelb Card -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/unimelb_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">University of Melbourne</h4>
+                    <p class="mb-0 black">Bachelor of Commerce (Finance)</p>
+                    <p class="mb-0">Melbourne, Victoria (Feb - August 2021)</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="about-right col-sm-12 col-md-6">
+              <div class="border-bottom">
+                 <h3>Where I’ve Worked / Consulted</h3>
+              </div>
+  
+              <!-- #################################### RLG Card -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/rlg_logo.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">RLG (ASX: RLG)</h4>
+                    <p class="mb-0 black">[Consultant] Business Development, Operations,<br>Research, eCommerce Management, Development</p>
+                    <p class="mb-0">Perth, Western Australia (2020 - Present)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### Stratforms LLC -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/stratforms_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Stratforms LLC</h4>
+                    <p class="mb-0 black">[Consultant] Operations & Supply-Chain<br>Transformation, Web Development</p>
+                    <p class="mb-0">Hong Kong (2020 - Present)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### Veta Group LLC -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/veta_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">VETA Group LLC</h4>
+                    <p class="mb-0 black">[Consultant] Supply-Chain Transformation</p>
+                    <p class="mb-0">Florida, USA (2019-2020)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### Bubblegum Casting -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/bubblegum_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Bubblegum Casting</h4>
+                    <p class="mb-0 black">[Consultant] Operations & Technology Transformation,<br>Product Management</p>
+                    <p class="mb-0">Melbourne, Victoria (2020 - Present)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### Alibaba Group -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/alibaba_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Alibaba Group</h4>
+                    <p class="mb-0 black">[Consultant] Curriculum Developer, Subject Matter Expert.</p>
+                    <p class="mb-0">Hangzhou, China (Aug - Dec 2019)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### China Skinny -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/china_skinny_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">China Skinny</h4>
+                    <p class="mb-0 black">Research Manager, Strategy Consultant</p>
+                    <p class="mb-0">Shanghai, China (2018-2019)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### QBID -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/qbid_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">QBID</h4>
+                    <p class="mb-0 black">eCommerce Consultant, Product Manager</p>
+                    <p class="mb-0">Melbourne Victoria / Guangzhou, China (2015-2018)</p>
+                  </div>
+                </div>
+              </div>            
+              <!-- #################################### ANZ -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/anz_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">ANZ Bank</h4>
+                    <p class="mb-0 black">Corporate & Commercial Banking Trainee</p>
+                    <p class="mb-0">Perth, Western Australia (2014 - 2015)</p>
+                  </div>
+                </div>
+              </div>            
+  
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- #################################### clients I've delivered Projects For // CAROUSEL -->
+        <div class="container carousel-container">
+          <div class="sub-container pl-3 pr-3">
+            <div class="nav-menu border-bottom">
+              <h3>Clients I've Served</h3>
+              <p>
+                <span>&#139;</span>
+                <span>&#155;</span>
+              </p>
+            </div>
+          </div>
+  
+          <div class="main-carousel">
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/woolworths.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/westpac.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/reckitt.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/tourism_australia.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/saic.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/trilogy.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/arnotts.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/aft_pharma.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/aaco.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/hollister.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/thatchers.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/john_west.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/glanbia.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/melrose.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/sunrice.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/celebrity_slim.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/optipharm.png" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/ego.png	" alt="">
+              </picture>
+            </div>
+            <div class="company">
+              <picture>
+                <img src="images/clients_served/flordis.png" alt="">
+              </picture>
+            </div>
+          </div>
+    
+    
+        </div>
+        
+      </div> 
+    </section>
+
     
     <!-- #################################### CONTACT PAGE -->
-    <div class="contact">
+    <section id="contact">
 
 
       <div class="full-container">
@@ -542,7 +569,8 @@
           </div>
           <div class="center-container row d-flex mt-3">
             <div class="home-greeting col-sm-12 col-md-7 mb-3">
-              <p>Do you want to work together, collaborate or simply connect for a chat? Shoot me an email or connect with me via social media.</p>
+              <p>Do you want to work together, collaborate or simply connect for a chat?</p>
+              <p>Shoot me an email or connect with me via social media.</p>
             </div>
             <div class="icons-container col-sm-12 col-md-5">
               <a id="email" href="mailto: alexander.a.kelso@gmail.com" target="none"><i class="fas fa-envelope-square"></i></a> 
@@ -565,19 +593,14 @@
         </div>
       </div>
 
-    </div>
+    </section>
     
-
-    
-
-
-
-
 
 
 
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
   </body>
 </html> 
