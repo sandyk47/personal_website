@@ -71,7 +71,7 @@
 }
 
 .full-container .icons-container i:hover {
-    color: #b6c869;
+    color: #3bb5d7;
     font-size: 75px;
 }
 
@@ -81,4 +81,21 @@
 
 .footer {
     background-color: white;
+}
+
+.icon {
+    /* max-width: 30px; */
+    /* height: auto; */
+    /* position: relative; */
+}
+
+.icon img {
+    /* position: absolute; */
+    max-width: 38px;
+    height: auto;
+}
+
+#lg-icon img {
+    max-width: 50px;
+    height: auto;
 }

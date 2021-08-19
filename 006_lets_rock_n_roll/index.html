@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf08" />
     <title>Alexander Kelso</title>
@@ -8,21 +9,24 @@
     <meta property="og:title" content="Alexander Kelso: Fintech Enthusiast & Professional Consultant">
     <meta property="og:image" content="images/alex.jpg">
     <meta property="og:description" content="Helping businesses achieve excellent results since 2014. Check out Alex's online CV.">
-    <meta property="og:site_name" content="Alexander Kelso"/>    
+    <meta property="og:site_name" content="Alexander Kelso"/> 
     
     <!-- # JAVASCRIPT IMPORTS -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+    <!--<script src="main.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    
     <!-- CSS & SYLE IMPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://kit.fontawesome.com/164ac97590.js" crossorigin="anonymous"></script>
     
+
+
+
     
 
 
@@ -57,11 +61,13 @@
         <div class="container inner-full-container">
           <div class="center-container row d-flex">
             <div class="col-sm-12 col-md-7 home-greeting">
-              <h2>👋</h2>
-              <h2>Hello, I am Alex Kelso</h2>
+              <div class="icon d-flex align-items-center mb-2">
+                <img src="images/hello.png" alt="">
+                <h2 class="mb-0 ml-2">Hello, I am Alex Kelso</h2>
+              </div>
               <p>I am a fintech enthusiast with full-stack tech capabilities and six years of experience consulting with global businesses. I love surfing and rock climbing, and I am passionate about digital and financial inclusion.</p>
             </div>
-            <img src="images/alex.jpg" class="col-sm-12 col-md-5 mt-3" alt="">  
+            <img src="images/alex_new.png" class="col-sm-12 col-md-5 mt-3" alt="">  
           </div>
         </div>
       </div>
@@ -73,7 +79,10 @@
       <div class="mt-5"></div>
       <div class="container pb-5">
         <div class="border-bottom">
-          <h2 class="navbar-buffer">✍️‍ Skills</h2>
+          <div class="icon d-flex align-items-center mb-2 navbar-buffer">
+            <img src="images/skills.png" alt="">
+            <h2 class="mb-0 ml-2">Skills</h2>
+          </div>
         </div>
         <div id="skills-container">
           <!-- #################################### Fintech Card -->
@@ -134,7 +143,7 @@
                   </div>
                   <div class="skill-card-right d-flex col-sm-12 col-md-7">
                     <ul class=skill-list>
-                      <li>‘As Is’ and ‘To Be’  Process Mapping</li>
+                      <li>'As Is' and 'To Be' Process Mapping</li>
                       <li>User Experience Analysis</li>
                       <li>Generating Business Cases,<br>Work Plans & Project Scopes</li>
                       <li>Stakeholder Identification,<br>Negotiation & Roles (RACI)</li>
@@ -275,7 +284,10 @@
     <section id="about">
       <div class="container pt-5">
         <div class="border-bottom">
-          <h2 class="pt-2">👨‍ About</h2>
+          <div class="icon d-flex align-items-end mb-2 navbar-buffer" id="lg-icon">
+            <img src="images/about.png" alt="">
+            <h2 class="mb-0 ml-2">About</h2>
+          </div>
         </div>
         <!-- #################################### main bio section -->
         <div class="d-flex container about-container pt-4">
@@ -285,7 +297,7 @@
                  <h3>My Story</h3>
               </div>
               <p class="mb-0 mt-3">
-                I have been working as a commercial expert in China’s dynamic and complex tech industry since 2015. During this time, I’ve had the opportunity to work alongside some amazing people on several cutting edge products and projects. These include:
+                I have been working as a commercial expert in China's dynamic and complex tech industry since 2015. During this time, I've had the opportunity to work alongside some amazing people on several cutting edge products and projects. These include:
               </p>  
               <ul>
                 <li>Developing multi-million dollar omnichannel eCommerce businesses for Trilogy Natural Skincare, Flordis Pharmaceuticals and Celebrity Slim.</li>
@@ -346,19 +358,8 @@
               <div class="border-bottom">
                  <h3>Where I’ve Worked / Consulted</h3>
               </div>
-  
-              <!-- #################################### RLG Card -->
-              <div class="experience-card d-flex">
-                <img src="images/experience_logos/rlg_logo.png" alt="">
-                <div class="experience-container">
-                  <div class="experience-details pl-4">
-                    <h4 class="mb-0 mr-3">RLG (ASX: RLG)</h4>
-                    <p class="mb-0 black">[Consultant] Business Development, Operations,<br>Research, eCommerce Management, Development</p>
-                    <p class="mb-0">Perth, Western Australia (2020 - Present)</p>
-                  </div>
-                </div>
-              </div>            
-              <!-- #################################### Stratforms LLC -->
+              
+             <!-- #################################### Stratforms LLC -->
               <div class="experience-card d-flex">
                 <img src="images/experience_logos/stratforms_200.png" alt="">
                 <div class="experience-container">
@@ -368,7 +369,32 @@
                     <p class="mb-0">Hong Kong (2020 - Present)</p>
                   </div>
                 </div>
+              </div>                       
+
+              <!-- #################################### Bubblegum Casting -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/bubblegum_200.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">Bubblegum Casting</h4>
+                    <p class="mb-0 black">[Consultant] Operations & Technology Transformation,<br>Product Management</p>
+                    <p class="mb-0">Melbourne, Victoria (2020 - Present)</p>
+                  </div>
+                </div>
+              </div> 
+              
+              <!-- #################################### RLG Card -->
+              <div class="experience-card d-flex">
+                <img src="images/experience_logos/rlg_logo.png" alt="">
+                <div class="experience-container">
+                  <div class="experience-details pl-4">
+                    <h4 class="mb-0 mr-3">RLG (ASX: RLG)</h4>
+                    <p class="mb-0 black">[Consultant] Business Development, Operations,<br>Research, eCommerce Management, Development</p>
+                    <p class="mb-0">Perth, Western Australia (2020 - 2021)</p>
+                  </div>
+                </div>
               </div>            
+    
               <!-- #################################### Veta Group LLC -->
               <div class="experience-card d-flex">
                 <img src="images/experience_logos/veta_200.png" alt="">
@@ -380,17 +406,7 @@
                   </div>
                 </div>
               </div>            
-              <!-- #################################### Bubblegum Casting -->
-              <div class="experience-card d-flex">
-                <img src="images/experience_logos/bubblegum_200.png" alt="">
-                <div class="experience-container">
-                  <div class="experience-details pl-4">
-                    <h4 class="mb-0 mr-3">Bubblegum Casting</h4>
-                    <p class="mb-0 black">[Consultant] Operations & Technology Transformation,<br>Product Management</p>
-                    <p class="mb-0">Melbourne, Victoria (2020 - Present)</p>
-                  </div>
-                </div>
-              </div>            
+           
               <!-- #################################### Alibaba Group -->
               <div class="experience-card d-flex">
                 <img src="images/experience_logos/alibaba_200.png" alt="">
@@ -446,10 +462,6 @@
           <div class="sub-container pl-3 pr-3">
             <div class="nav-menu border-bottom">
               <h3>Clients I've Served</h3>
-              <p>
-                <span>&#139;</span>
-                <span>&#155;</span>
-              </p>
             </div>
           </div>
   
@@ -550,6 +562,13 @@
               </picture>
             </div>
           </div>
+
+          <div class="carousel-navs">
+            <div class="chevrons">
+              <i class="fas fa-chevron-circle-left carousel-nav"></i>
+              <i class="fas fa-chevron-circle-right carousel-nav"></i>
+            </div>            
+          </div>
     
     
         </div>
@@ -565,12 +584,14 @@
       <div class="full-container">
         <div class="container inner-full-container">
           <div class="border-bottom">
-            <h2>🤙‍ Contact</h2>
+            <div class="icon d-flex align-items-end mb-2 navbar-buffer">
+              <img src="images/contact.png" alt="">
+              <h2 class="mb-0 ml-2">Contact</h2>
+            </div>            
           </div>
           <div class="center-container row d-flex mt-3">
             <div class="home-greeting col-sm-12 col-md-7 mb-3">
-              <p>Do you want to work together, collaborate or simply connect for a chat?</p>
-              <p>Shoot me an email or connect with me via social media.</p>
+              <p>Do you want to work together, collaborate or simply connect for a chat? Shoot me an email or connect with me via social media.</p>
             </div>
             <div class="icons-container col-sm-12 col-md-5">
               <a id="email" href="mailto: alexander.a.kelso@gmail.com" target="none"><i class="fas fa-envelope-square"></i></a> 
@@ -589,7 +610,7 @@
       <div class="footer">
         <div class="container d-flex flex-column">
           <p class="mb-1 black"><b>Website designed & built by Alexander Kelso, 2021</b></p>
-          <p>Icons by Freepik & Surang from www.flaticon.com</p>
+          <p class="s12">Icons by Freepik, Vitaly Gorbachev, Flat Icons & Surang from www.flaticon.com</p>
         </div>
       </div>
 
@@ -600,7 +621,6 @@
 
 
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
   </body>
 </html> 
