@@ -1,0 +1,84 @@
+.full-container {
+    height: 100vh; /* For 100% screen height */
+    width:  100vw; /* For 100% screen width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.center-container img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.center-container {
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 9vh; */
+}
+
+.inner-full-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.home-greeting {
+    flex-grow: 1;
+}
+
+.center-container img {
+    flex-grow: 1;
+}
+
+.home-greeting p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-color: #797979;
+}
+
+.home-greeting h2 {
+    font-size: 32px;
+    font-color: black;
+}
+
+.full-container .icons-container {
+    display: flex;
+    font-size: 70px;
+    justify-content: space-evenly;
+}
+
+.icons-container #email {
+    color: black;
+}
+
+.icons-container #github {
+    color: black;
+}
+
+.icons-container #linkedin {
+    color: #0077b7;
+}
+
+.icons-container #twitter {
+    color: #1da1f2;
+}
+
+.full-container .icons-container i {
+    transition-duration: .8s;
+    margin-right: 16px;
+}
+
+.full-container .icons-container i:hover {
+    color: #b6c869;
+    font-size: 75px;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: white;
+}

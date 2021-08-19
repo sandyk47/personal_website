@@ -3,18 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&display=swap');
 
 /* Components Design */
-
-
 @import url("components/button.css");
 @import url("components/card-skill.css");
 @import url("components/experience-card.css");
 @import url("components/container.css");
 @import url("components/footer.css");
 @import url("components/navbar.css");
+@import url("components/carousel.css");
 
-@import url("components/home-styling.css");
-@import url("components/skills-styling.css");
-@import url("components/about-styling.css");
+
+/* PAGE STYLING */
+@import url("home-segments/home-styling.css");
+@import url("home-segments/skills-styling.css");
+@import url("home-segments/about-styling.css");
+@import url("home-segments/contact-styling.css");
+
+
 
 
 body {
