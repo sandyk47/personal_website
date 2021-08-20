@@ -4,44 +4,58 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.center-container img {
-    max-width: 400px;
-    height: auto;
-    object-fit: cover;
-}
-
-.center-container {
-    align-items: center;
-    justify-content: space-between;
-    /* padding-bottom: 9vh; */
-}
-
-.inner-full-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    overflow: hidden;
 }
 
 .home-greeting {
-    flex-grow: 1;
-}
-
-.center-container img {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    /* flex-direction: column;
+    display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .home-greeting p {
     margin-bottom: 0;
     font-size: 16px;
-    font-color: #797979;
+    color: #797979;
+    max-width: 418px;
+    margin-right: 0;
 }
 
 .home-greeting h2 {
     font-size: 32px;
-    font-color: black;
+    color: black;
 }
+
+.home-inner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .home-inner {
+        flex-direction: column;
+    }
+}
+
+
+.mob-container {
+    /* position: relative; */
+    justify-content: center;
+    display: flex;
+}
+
+.home-inner .profile-photo {
+    max-width: 400px;
+    /* position: absolute; */
+    /* object-fit: cover; */
+    
+}
+
+
+/* ################################# FOOTER */
 
 .full-container .icons-container {
     display: flex;
@@ -82,6 +96,9 @@
 .footer {
     background-color: white;
 }
+
+
+/* ########### ICONS */
 
 .icon {
     /* max-width: 30px; */
