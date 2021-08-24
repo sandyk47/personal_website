@@ -7,18 +7,10 @@
     overflow: hidden;
 }
 
-.home-greeting {
-    /* flex-grow: 1; */
-    /* flex-direction: column;
-    display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
 
 .home-greeting p {
     margin-bottom: 0;
     font-size: 16px;
-    color: #797979;
     max-width: 418px;
     margin-right: 0;
 }
