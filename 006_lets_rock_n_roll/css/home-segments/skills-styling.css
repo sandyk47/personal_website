@@ -15,3 +15,11 @@
 #skills-container li {
     color: black;
 }
+
+.skill-card {
+    transition-duration: .8s;
+}
+
+.skill-card:hover {
+    background-color: #f2f6ff;
+}

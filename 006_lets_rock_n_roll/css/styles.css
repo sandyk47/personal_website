@@ -17,6 +17,7 @@
 @import url("home-segments/home-styling.css");
 @import url("home-segments/skills-styling.css");
 @import url("home-segments/about-styling.css");
+@import url("home-segments/portfolio.css");
 
 
 html {
@@ -109,4 +110,13 @@ h4 {
   
 .line-space {
     line-height: 1.6;
+}
+
+.background-grey {
+    background-color: #f9f9f9;
+}
+
+
+.section-title {
+    border-bottom: 2px solid #dee2e6;
 }
