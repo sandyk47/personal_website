@@ -10,6 +10,7 @@
 @import url("components/footer.css");
 @import url("components/navbar.css");
 @import url("components/carousel.css");
+@import url("components/work_card.css");
 
 
 /* PAGE STYLING */
@@ -87,4 +88,25 @@ h4 {
 
 .grey {
     color: #797979;
+}
+
+
+.light-blue {
+    background-color: #f3faff;
+}
+  
+.light-red {
+    background-color: #f7f0f0;
+}
+
+.light-green {
+    background-color: #f6fbf7;
+}
+
+.light-pink {
+    background-color: #f9f6fe;
+}
+  
+.line-space {
+    line-height: 1.6;
 }
