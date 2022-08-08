@@ -1,5 +1,5 @@
 .full-container {
-    height: 100vh; /* For 100% screen height */
+    height: 80vh; /* For 100% screen height */
     width:  100vw; /* For 100% screen width */
     display: flex;
     flex-direction: column;
@@ -13,11 +13,12 @@
     font-size: 16px;
     max-width: 418px;
     margin-right: 0;
+    color: #cdcdcd;
 }
 
 .home-greeting h2 {
     font-size: 32px;
-    color: black;
+    color: white;
 }
 
 .home-inner {
@@ -56,11 +57,11 @@
 }
 
 .icons-container #email {
-    color: black;
+    color: white
 }
 
 .icons-container #github {
-    color: black;
+    color: white;
 }
 
 .icons-container #linkedin {
@@ -86,7 +87,7 @@
 }
 
 .footer {
-    background-color: white;
+    background-color: black;
 }
 
 

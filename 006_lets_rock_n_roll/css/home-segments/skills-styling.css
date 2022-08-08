@@ -4,16 +4,16 @@
 }
 
 #skills-container p {
-    color: black;
+    color: white;
 }
 
 #skills-container h3 {
-    color: black;
+    color: white;
 }
 
 
 #skills-container li {
-    color: black;
+    color: white;
 }
 
 .skill-card {
@@ -21,5 +21,5 @@
 }
 
 .skill-card:hover {
-    background-color: #f2f6ff;
+    /* background-color: #f2f6ff; */
 }

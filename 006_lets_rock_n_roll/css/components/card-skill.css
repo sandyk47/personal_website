@@ -22,6 +22,10 @@
   margin-top: 32px;
   /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
   border-radius: 5px;
-  border: 1px solid #dee2e6;
+  background-color: #072a26;
+  /* border: 1px solid #727272; */
 }
 
+.skill-card:hover {
+  background-color: #054b43;
+}

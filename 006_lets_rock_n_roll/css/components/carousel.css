@@ -39,6 +39,7 @@
 		    text-align: center;
 		    /* border-radius: 3px; */
 			transition-duration: .8s;
+			/* position: absolute; */
 		}
 		.carousel-navs i:hover{
 			/* background: #222; */
@@ -49,9 +50,10 @@
 			width: 98%;
 			max-height: 100px;
 			padding-top: 5px;
-			/* background: red; */
+			/* background: #072a26; */
 			margin: auto;
 			display: flex;
+			flex-direction: row;
 			align-items: center;
 			overflow-x: scroll;
 			overflow-y: hidden;
@@ -75,32 +77,39 @@
 
 		picture{
 			width: 150px;
-			/* height: 70%; */
+			height: auto;
 			padding: 20px;
 			/*background: green;*/
 			display: flex;
+			align-items: flex-start;
 			overflow: hidden;
 			/* margin-bottom: 20px; */
 		}
 
 		.chevrons {
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 		}
 
 		.chevrons i {
 			margin-left: 8px;
 			margin-right: 8px;
 			margin-top: 16px;
-			color: #BBE5F1;
+			color: #054b43;
 		}
 
 		.chevrons i:hover {
-			color: #3ab6d7;
+			color: #3b9188;
 		}
+
+		/* picture {
+			width: 100%;
+			height: auto;
+		} */
 
 		picture img{
 			width: 100%;
+			height: auto;
 		}
 		
 		.nav-menu h3 {
@@ -125,7 +134,19 @@
 			}
 			.main-carousel .company {
 				min-width: 50%;
-				margin: 0px 8px 0 8px;
+				margin: 0 8px 0 8px;
 			}
 
 		}
+
+.chevrons .fa-chevron-right {
+	position: absolute;
+	top: 45%;
+	right: 10px;
+}
+
+.chevrons .fa-chevron-left {
+	position: absolute;
+	top: 45%;
+	left: 10px;
+}
