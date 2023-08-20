@@ -71,7 +71,22 @@ picture:hover img {
     filter: drop-shadow(0px 0px 15px #3b9188); /* Shadow around the image content */
   }
 
-/* NAVS */
+/* NAVS & CHEVRONS */
+
+.chevrons .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); /* Vertically centers the chevron */
+}
+
+.chevrons .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); /* Vertically centers the chevron */
+}
+
 
 
 .carousel-container .nav-menu {
@@ -97,36 +112,18 @@ picture:hover img {
     display: inline-block;
     line-height: 30px;
     text-align: center;
-    transition: transform 1.2s; /* Transition for color and transform */
+    transition: color 1.2s, filter 1s; 
     transform-origin: 50% 50%; /* Center of the element */
 }
 
 .carousel-navs i:hover {
-    color: #274943; /* Hover color */
-    transform: scale(1.02); /* Scales up the size to 110% when hovered */
+    color: #b6c869; /* Hover color change */
+    filter: drop-shadow(0 0 5px #3b9188); /* Omnidirectional shadow */
 }
 
 
 .nav-menu h3, .nav-menu p {
     margin-bottom: 0;
-}
-
-
-/* CHEVRONS */
-
-
-.chevrons .fa-chevron-left {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-}
-
-.chevrons .fa-chevron-right {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
 }
 
 
