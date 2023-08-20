@@ -33,7 +33,7 @@
     transition: transform 1s ease, filter 1s ease; /* Smooth transition for transformation and filter */
 }
 
-.education-card:hover img {
+.education-card img:hover {
     transform: scale(1.10); /* Grow the image by 110% */
     filter: drop-shadow(0px 0px 15px #3b9188); /* Shadow around the image content */
   }
