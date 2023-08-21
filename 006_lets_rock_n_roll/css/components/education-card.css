@@ -15,12 +15,13 @@
 }
 
 .education-card {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     
     /* flex: 1 0 calc(25% - 16px);  */
     /* 1 x 4 on large screens */
     
     margin: 8px;
+    flex: 1 0 calc(25% - 16px); /* 1 x 4 on large screens */
 }
 
 .education-card img {
@@ -37,3 +38,20 @@
     transform: scale(1.10); /* Grow the image by 110% */
     filter: drop-shadow(0px 0px 15px #3b9188); /* Shadow around the image content */
   }
+
+
+  /* MEDIA QUERIES */
+
+/* Media query for medium screens (breakpoint at 1024px) */
+@media (max-width: 1024px) {
+    .education-card {
+        flex: 1 0 calc(50% - 16px); /* 2 x 2 on medium screens */
+    }
+}
+
+/* Media query for small screens (example breakpoint at 480px) */
+@media (max-width: 480px) {
+    .education-card {
+        flex: 1 0 100%; /* 4 x 1 on small screens */
+    }
+}
