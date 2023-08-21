@@ -3,6 +3,14 @@
   align-items: center;
 }   
 
+.skill-card .skill-heading h3 {
+  hyphens: auto;
+  -webkit-hyphens: auto; /* For Safari */
+  -ms-hyphens: auto;     /* For Microsoft browsers */
+  word-wrap: break-word; /* Fallback */
+  max-width: 100%;       /* Ensure it doesn't overflow */
+}
+
 .skill-heading img {
   max-width: 50px;
 }
@@ -24,8 +32,57 @@
   border-radius: 5px;
   background-color: #072a26;
   /* border: 1px solid #727272; */
+  /* min-width: 300px; */
+  min-width: 300px;
+  max-width: 100%; /* Ensures the card doesn't overflow the parent container */
+  box-sizing: border-box; /* This ensures padding and borders are included in total width */
 }
 
 .skill-card:hover {
   background-color: #054b43;
+}
+
+/* Mobile-first approach: By default, lists stack vertically */
+.skill-card-right .skill-list {
+  width: 100%; 
+}
+
+
+.skill-card h3 {
+  word-wrap: break-word; /* Will break long words to next line */
+  overflow-wrap: break-word; /* Preferred modern usage */
+  hyphens: auto; /* Automatically add hyphens */
+}
+
+
+/* On medium screens and above, lists are displayed side-by-side */
+@media (min-width: 576px) { /* 768px is the default breakpoint for Bootstrap's 'md' */
+  .skill-card-right .skill-list:first-of-type {
+    padding-right: 15px; /* You can adjust this value as needed */
+  }
+  .skill-card-right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 575px) { /* 575px is the upper limit for Bootstrap's 'xs' */
+  
+  .skill-list li {
+    font-size: 12px; /* Adjust as needed */
+  }
+
+  .skill-card .skill-heading h3 {
+    font-size: 14px; /* Reduce the font size to better fit the container */
+  }
+
+  .skill-card-right {
+    flex-direction: column;
+  }
+
+  .skill-card-right .skill-list {
+      /* margin-bottom: 10px; */
+  }
+
 }
