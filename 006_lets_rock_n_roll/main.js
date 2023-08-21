@@ -50,6 +50,55 @@ window.dispatchEvent(new Event('resize'));
 
 
 
+// #################################### ARTICLE CAROUSEL CONTENT
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const prevButton = document.querySelector('.article-carousel-prev');
+    const nextButton = document.querySelector('.article-carousel-next');
+    const carouselContent = document.querySelector('.article-carousel-content');
+    
+    let cardWidth = document.querySelector('.article-card').offsetWidth;
+    const cardStyle = getComputedStyle(document.querySelector('.article-card'));
+    const cardMargin = parseFloat(cardStyle.marginRight) + parseFloat(cardStyle.marginLeft);
+    
+    function updateCardWidth() {
+        cardWidth = document.querySelector('.article-card').offsetWidth + cardMargin;
+    }
+
+    function getVisibleCards() {
+        const visibleWidth = carouselContent.offsetWidth;
+        return Math.round(visibleWidth / cardWidth);
+    }
+
+    prevButton.addEventListener('click', function() {
+        const visibleCards = getVisibleCards();
+        carouselContent.scrollLeft -= cardWidth * visibleCards;
+    });
+
+    nextButton.addEventListener('click', function() {
+        const visibleCards = getVisibleCards();
+        carouselContent.scrollLeft += cardWidth * visibleCards;
+    });
+
+    window.addEventListener('resize', updateCardWidth);
+
+    carouselContent.addEventListener('scroll', function() {
+        if (carouselContent.scrollLeft < 0) {
+            carouselContent.scrollLeft = 0;
+        }
+        
+        if (carouselContent.scrollLeft + carouselContent.offsetWidth > carouselContent.scrollWidth) {
+            carouselContent.scrollLeft = carouselContent.scrollWidth - carouselContent.offsetWidth;
+        }
+    });
+});
+
+
+
+
+
+
 // #################################### HIGHLIGHTING MENU ITEM
 
 
