@@ -1,30 +1,4 @@
-/* GENERAL STYLES FOR ARTICLE CAROUSEL */
-
-.article-carousel {
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-}
-
-.carousel-content.article-carousel {
-    flex-grow: 1;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-}
-
-.article-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel-list.article-carousel-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
+/* GENERAL STYLING FOR ARTICLE CARDS */
 
 .article-card {
     flex: 0 0 auto;
@@ -34,7 +8,6 @@
     margin: 0 8px;
     transition-duration: .8s;
     max-width: 180px; 
-    width: calc(100% / 4 - 16px); /* Four cards for large screens */
 }
 
 .article-card:hover {
@@ -81,22 +54,100 @@
     color: #b8e1dd;
 }
 
+
+
+
+
+/* GENERAL STYLES FOR ARTICLE CAROUSEL */
+
+.article-carousel-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.article-carousel-btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.article-carousel-prev, .article-carousel-next {
+    color: #054b43;
+    border-color: #054b43; /* If the chevrons are made with borders, this will change their color */
+    transition: transform 1s ease, filter 1s ease, color 1s ease;
+}
+
+.article-carousel-prev:focus, .article-carousel-next:focus {
+    outline: none;
+}
+
+.article-carousel-prev:hover, .article-carousel-next:hover {
+    transform: scale(1.40); /* Grow the image by 110% */
+    color: #b6c869;
+    /* filter: drop-shadow(0px 0px 5px #b6c869); Shadow around the image content */
+}
+
+.article-carousel-content {
+    flex-grow: 1;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    scroll-behavior: smooth;
+}
+
+.article-carousel-content::-webkit-scrollbar { /* Chrome, Safari */
+    display: none;
+}
+
+.article-carousel-list {
+    display: flex;
+    scroll-snap-align: start;
+    list-style-type: none; /* This removes the bullets */
+    padding: 0;            /* This removes any default padding */
+    margin: 0;             /* This removes any default margin */
+}
+
+.article-carousel-list li {
+    flex: 0 0 25%; /* Start with 4 logos across */
+    scroll-snap-align: start;
+    transition: flex 0.5s;
+}
+
+
 /* RESPONSIVENESS */
 
+/* @media (max-width: 900px) { */
+    /* .article-card { */
+        /* width: calc(100% / 3 - 24px); Three cards for medium screens */
+    /* } */
+/* } */
+
+/* @media (max-width: 600px) { */
+    /* .article-card { */
+        /* width: calc(100% / 2 - 16px); Two cards for smaller screens */
+    /* } */
+/* } */
+
+/* @media (max-width: 400px) { */
+    /* .article-card { */
+        /* width: 90%; One card for very small screens */
+    /* } */
+/* } */
+
+
 @media (max-width: 900px) {
-    .article-card {
-        width: calc(100% / 3 - 24px); /* Three cards for medium screens */
+    .article-carousel-list li {
+        flex: 0 0 33.33%;
     }
 }
 
+/* Responsive styling for 2 logos across */
 @media (max-width: 600px) {
-    .article-card {
-        width: calc(100% / 2 - 16px); /* Two cards for smaller screens */
-    }
-}
-
-@media (max-width: 400px) {
-    .article-card {
-        width: 90%; /* One card for very small screens */
+    .article-carousel-list li {
+        flex: 0 0 50%;
     }
 }

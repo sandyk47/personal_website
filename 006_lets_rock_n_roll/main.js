@@ -1,4 +1,4 @@
-// #################################### CLIENTS CAROUSEL CODE
+// #################################### CAROUSEL CODE
 
 const prevBtn = document.querySelector('.carousel-prev');
 const nextBtn = document.querySelector('.carousel-next');
@@ -45,11 +45,13 @@ function checkButtons() {
     }
 }
 
-// #################################### ARTICLE CAROUSEL CODE
+// Initialize with the current setting.
+window.dispatchEvent(new Event('resize'));
 
 
 
 // #################################### HIGHLIGHTING MENU ITEM
+
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
@@ -70,6 +72,3 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-// Initialize with the current setting.
-window.dispatchEvent(new Event('resize'));
