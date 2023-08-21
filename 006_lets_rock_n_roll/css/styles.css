@@ -155,6 +155,11 @@ li {
 
 .section-title {
     border-bottom: 2px solid #dee2e6;
+    display: flex;  /* Turn on flexbox */
+    align-items: center;  /* Center items vertically in the container */
+    justify-content: center;  /* Center items horizontally in the container */
+    border-bottom: 3.5px solid #dee2e6;
+    width: auto; /* or whatever width you're setting it to */
 }
 
 
@@ -165,4 +170,16 @@ li {
 
 .h3-title h3 {
     text-align: center;
+    padding-top: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) { /* you can adjust the breakpoint value */
+    .section-title {
+        width: 100%; /* span full width */
+        margin-left: 0; /* remove any left margin */
+        margin-right: 0; /* remove any right margin */
+        padding-left: 0; /* remove any left padding */
+        padding-right: 0; /* remove any right padding */
+    }
 }
