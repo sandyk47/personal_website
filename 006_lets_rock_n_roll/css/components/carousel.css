@@ -13,7 +13,6 @@
 }
 
 .carousel-prev, .carousel-next {
-    /* ... other styles ... */
     color: #054b43;
     border-color: #054b43; /* If the chevrons are made with borders, this will change their color */
     transition: transform 1s ease, filter 1s ease, color 1s ease;

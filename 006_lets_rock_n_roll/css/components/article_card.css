@@ -1,20 +1,40 @@
+/* GENERAL STYLES FOR ARTICLE CAROUSEL */
+
 .article-carousel {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;     
+    position: relative;
+}
+
+.carousel-content.article-carousel {
+    flex-grow: 1;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+.article-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-list.article-carousel-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
 .article-card {
-    flex: 0 0 auto; 
-    width: 170px;
+    flex: 0 0 auto;
+    width: calc(100% / 3 - 16px);
     text-align: center;
-    background-color:#072a26;
+    background-color: #072a26;
     border-radius: 5px;
-    margin-right: 24px;
-    margin-bottom: 24px;
+    margin: 0 8px;
     transition-duration: .8s;
+    max-width: 180px; 
 }
 
 .article-card:hover {
@@ -33,18 +53,14 @@
 }
 
 .article-img {
-    position: relative;
     height: 100px;
-    width: auto;
     margin: 16px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .article-card img {
-    position: absolute;
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
@@ -63,4 +79,19 @@
     padding-left: 16px;
     padding-right: 16px;
     color: #b8e1dd;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .article-card {
+        width: calc(100% / 2 - 24px);
+    }
+}
+
+@media (max-width: 600px) {
+    .article-card {
+        width: 90%; 
+        margin: 0 5%; 
+    }
 }
