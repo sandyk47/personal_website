@@ -61,10 +61,10 @@
 /* GENERAL STYLES FOR ARTICLE CAROUSEL */
 
 .article-carousel-container {
-    display: flex;
-    align-items: center;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .article-carousel-btn {
