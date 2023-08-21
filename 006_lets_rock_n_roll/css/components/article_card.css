@@ -28,13 +28,13 @@
 
 .article-card {
     flex: 0 0 auto;
-    width: calc(100% / 3 - 16px);
     text-align: center;
     background-color: #072a26;
     border-radius: 5px;
     margin: 0 8px;
     transition-duration: .8s;
     max-width: 180px; 
+    width: calc(100% / 4 - 16px); /* Four cards for large screens */
 }
 
 .article-card:hover {
@@ -85,13 +85,18 @@
 
 @media (max-width: 900px) {
     .article-card {
-        width: calc(100% / 2 - 24px);
+        width: calc(100% / 3 - 24px); /* Three cards for medium screens */
     }
 }
 
 @media (max-width: 600px) {
     .article-card {
-        width: 90%; 
-        margin: 0 5%; 
+        width: calc(100% / 2 - 16px); /* Two cards for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .article-card {
+        width: 90%; /* One card for very small screens */
     }
 }

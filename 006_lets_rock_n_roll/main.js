@@ -45,66 +45,11 @@ function checkButtons() {
     }
 }
 
-// Initialize with the current setting.
-window.dispatchEvent(new Event('resize'));
-
-
-
 // #################################### ARTICLE CAROUSEL CODE
 
-document.querySelector('.article-carousel').scrollLeft = 0;
-
-const articlePrevBtn = document.querySelector('.article-carousel-prev');
-const articleNextBtn = document.querySelector('.article-carousel-next');
-const articleContent = document.querySelector('.article-carousel');
-
-let articlesOnScreen = 3; // Default value for larger screens
-
-window.addEventListener('resize', () => {
-    // Update the number of articles displayed based on the screen size.
-    if (window.innerWidth <= 600) {
-        articlesOnScreen = 1;
-    } else if (window.innerWidth <= 900) {
-        articlesOnScreen = 2;
-    } else {
-        articlesOnScreen = 3;
-    }
-    checkArticleButtons();
-});
-
-articlePrevBtn.addEventListener('click', () => {
-    articleContent.scrollLeft -= articleContent.clientWidth / articlesOnScreen; 
-    checkArticleButtons();
-});
-
-articleNextBtn.addEventListener('click', () => {
-    articleContent.scrollLeft += articleContent.clientWidth / articlesOnScreen; 
-    checkArticleButtons();
-});
-
-// Disable/enable the buttons based on the scroll position.
-function checkArticleButtons() {
-    const maxScroll = articleContent.scrollWidth - articleContent.clientWidth;
-
-    if (articleContent.scrollLeft <= 0) {
-        articlePrevBtn.disabled = true;
-    } else {
-        articlePrevBtn.disabled = false;
-    }
-
-    if (articleContent.scrollLeft >= maxScroll - (articleContent.clientWidth * 0.1)) { 
-        articleNextBtn.disabled = true;
-    } else {
-        articleNextBtn.disabled = false;
-    }
-}
-
-// Initialize with the current setting.
-window.dispatchEvent(new Event('resize'));
 
 
 // #################################### HIGHLIGHTING MENU ITEM
-
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
@@ -125,3 +70,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Initialize with the current setting.
+window.dispatchEvent(new Event('resize'));
