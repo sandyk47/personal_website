@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getVisibleCards() {
         const visibleWidth = carouselContent.offsetWidth;
-        return Math.round(visibleWidth / cardWidth);
+        const numOfVisibleCards = Math.round(visibleWidth / cardWidth);
+        return (numOfVisibleCards > 1) ? numOfVisibleCards - 1 : numOfVisibleCards;
     }
 
     prevButton.addEventListener('click', function() {
