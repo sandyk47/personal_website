@@ -30,12 +30,13 @@
 
 .education-card img {
     display: block;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 70px;
+    max-height: 70px;
     width: auto;
     height: auto;
     object-fit: contain;
     transition: transform 1s ease, filter 1s ease; /* Smooth transition for transformation and filter */
+    margin: 5px; /* Adjust this value to your preference. This adds space all around the image */
 }
 
 .education-card img:hover {
