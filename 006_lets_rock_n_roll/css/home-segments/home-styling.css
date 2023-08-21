@@ -110,7 +110,7 @@
     height: auto;
 }
 
-
+/* test */
 /* Assuming you mentioned that 575px is the breakpoint */
 @media (max-width: 575px) {
     .home-inner {
