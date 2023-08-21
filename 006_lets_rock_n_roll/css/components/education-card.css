@@ -10,18 +10,22 @@
 
 .education-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children vertically since flex-direction is row */
+    width: 100%; /* Ensure it takes the full width of its parent */
 }
 
 .education-card {
-    /* margin-top: 16px; */
-    
-    /* flex: 1 0 calc(25% - 16px);  */
-    /* 1 x 4 on large screens */
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally since flex-direction is column */
     margin: 8px;
-    flex: 1 0 calc(25% - 16px); /* 1 x 4 on large screens */
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the content horizontally */
 }
 
 .education-card img {
