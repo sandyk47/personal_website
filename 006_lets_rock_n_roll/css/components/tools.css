@@ -50,6 +50,7 @@
   }
   .tool-card img {
       max-width: 90%; /* Reduce the image width to create more space */
+      max-width: 80px;
       margin: 0 auto; /* Center the image */
   }
 }
