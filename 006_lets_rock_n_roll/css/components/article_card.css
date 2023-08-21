@@ -7,7 +7,7 @@
     border-radius: 5px;
     margin: 0 8px;
     transition-duration: .8s;
-    max-width: 180px; 
+    max-width: 129px; 
     box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .article-card a:hover {
-    font-size: 102%;
+    /* font-size: 102%; */
     color: #3ab6d7;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .article-carousel-prev:hover, .article-carousel-next:hover {
-    transform: scale(1.40); /* Grow the image by 110% */
+    /* transform: scale(1.40);  */
     color: #b6c869;
     /* filter: drop-shadow(0px 0px 5px #b6c869); Shadow around the image content */
 }

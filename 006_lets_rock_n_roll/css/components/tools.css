@@ -8,10 +8,15 @@
   flex: 0 0 calc(12.5% - 40px); /* 8 logos per row, adjusted for more space */
   margin: 20px; /* Increased margin for more space */
   box-sizing: border-box;
+
+  display: flex;               /* Make it a flex container */
+  justify-content: center;    /* Center content horizontally */
+  align-items: center;        /* Center content vertically */  
 }
 
 .tool-card img {
   width: 100%;
+  max-width: 80px;
   height: auto;
   transition: transform 1s ease, filter 1s ease; /* Smooth transition for transformation and filter */
 }

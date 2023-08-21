@@ -24,11 +24,24 @@
 
 .project-card {
     background-color: #072a26;
-    /* border: 1px solid black; */
     border-radius: 5px;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 4px;
+    display: flex;            /* Ensure this is a flex container */
+    align-items: center;      /* Vertically align children to the center */
+    display: flex;
+    align-items: center;
+}
+
+.project-card img {
+    display: block;
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;          /* Center the image horizontally */
 }
 
 .project-card:hover {
@@ -68,10 +81,11 @@
     font-size: 16px;
     font-weight: bold;
     color: white;
+    transition-duration: .8s;
 }
 
 .project-card a:hover {
-    color: #3bb5d7;
+    color: #3ab6d7;
 }
 
 
@@ -96,3 +110,15 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #3b9188; 
   }
+
+  @media (max-width: 600px) { /* You can adjust the breakpoint as needed */
+    .project-card {
+        flex-direction: column;   /* Stack children vertically */
+        align-items: flex-start;  /* Align items to the left */
+    }
+    
+    .project-card img {
+        margin: 0 auto; /* Center the image horizontally within the card */
+        margin-bottom: 16px; /* Provide some spacing between the image and the text below */
+    }
+}
