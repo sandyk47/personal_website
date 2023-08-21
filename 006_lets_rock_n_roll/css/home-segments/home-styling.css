@@ -109,3 +109,22 @@
     max-width: 50px;
     height: auto;
 }
+
+/* Assuming you mentioned that 575px is the breakpoint */
+@media (max-width: 575px) {
+    .home-inner {
+        flex-direction: column-reverse; /* This will place the image on top */
+        align-items: center; /* Centers items horizontally */
+        justify-content: space-around; /* Even space between items */
+    }
+
+    .home-inner .profile-photo {
+        max-width: 266px; /* 2/3rds of 400px */
+        margin: 20px 0; /* Optional: You can adjust the vertical margin to ensure elements fit within the viewport */
+    }
+
+    .home-greeting {
+        text-align: center; /* Centers text in `.home-greeting` */
+        margin-bottom: 20px; /* Optional: You can adjust the bottom margin if needed */
+    }
+}
