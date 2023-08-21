@@ -1,160 +1,79 @@
-@charset "utf-8";
-
-/* CONTAINERS */
-
 .carousel-container {
-    position: relative; /* Newly added */
-    width: 100%;
-    margin: 10px auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0 0;
-}
-
-.carousel-wrapper {
-    position: relative;
     display: flex;
-    align-items: center; /* To align along the main axis */
-}
-
-.carousel-container .sub-container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-.main-carousel {
-    width: 98%;
-    max-height: 100px;
-    padding-top: 5px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
-	padding-right: 20px; /* Padding to avoid the last image being covered by the right chevron */
-    padding-left: 20px;  /* Padding to avoid the first image being covered by the left chevron */
+    overflow: hidden;
+    position: relative;
 }
 
-.main-carousel::-webkit-scrollbar {
+.carousel-btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-prev, .carousel-next {
+    /* ... other styles ... */
+    color: #054b43;
+    border-color: #054b43; /* If the chevrons are made with borders, this will change their color */
+    transition: transform 1s ease, filter 1s ease, color 1s ease;
+}
+
+.carousel-prev:focus, .carousel-next:focus {
+    outline: none;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    transform: scale(1.40); /* Grow the image by 110% */
+    color: #b6c869;
+    /* filter: drop-shadow(0px 0px 5px #b6c869); Shadow around the image content */
+}
+
+.carousel-content {
+    flex-grow: 1;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    scroll-behavior: smooth;
+}
+
+.carousel-content::-webkit-scrollbar { /* Chrome, Safari */
     display: none;
 }
 
-.main-carousel .company {
-    min-width: 24%;
-    margin: 0 0 0 20px;
-    position: relative;
-    left: 0;
-    transition: 0.5s;
-}
-
-/* IMAGES */
-
-picture {
-    width: 150px;
-    height: auto;
-    padding: 20px;
+.carousel-list {
     display: flex;
-    align-items: flex-start;
-    overflow: hidden;
+    scroll-snap-align: start;
+    list-style-type: none; /* This removes the bullets */
+    padding: 0;            /* This removes any default padding */
+    margin: 0;             /* This removes any default margin */
 }
 
-picture img {
-    width: 100%;
-    height: auto;
-    transition: transform 1s ease, filter 1s ease; /* Smooth transition for transformation and filter */
+.carousel-list li {
+    flex: 0 0 25%; /* Start with 4 logos across */
+    scroll-snap-align: start;
+    transition: flex 0.5s;
 }
 
-picture:hover img {
-    /* transform: scale(1.10); Grow the image by 110% */
-    filter: drop-shadow(0px 0px 15px #3b9188); /* Shadow around the image content */
-  }
-
-/* NAVS & CHEVRONS */
-
-.chevrons .fa-chevron-left {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%); /* Vertically centers the chevron */
+.carousel-list li img {
+    max-width: 120px;  /* Adjust this percentage as needed */
+    height: auto;    /* Keeps the aspect ratio */
+    display: block;  /* Remove any extra space below the image */
+    margin: 0 auto;  /* Centers the image in its container */
 }
 
-.chevrons .fa-chevron-right {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%); /* Vertically centers the chevron */
-}
-
-
-
-.carousel-container .nav-menu {
-    width: 98%;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #dee2e6;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.carousel-navs i {
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    color: #274943; /* Standard color */
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    line-height: 30px;
-    text-align: center;
-    transition: color 1.2s, filter 1s; 
-    transform-origin: 50% 50%; /* Center of the element */
-}
-
-.carousel-navs i:hover {
-    color: #b6c869; /* Hover color change */
-    filter: drop-shadow(0 0 5px #3b9188); /* Omnidirectional shadow */
-}
-
-
-.nav-menu h3, .nav-menu p {
-    margin-bottom: 0;
-}
-
-
-
-
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    .nav-menu h1 {
-        font-size: 25px;
-    }
-    
-    .carousel-navs i {
-        font-size: 30px;
-    }
-
-	.main-carousel {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    
-    .main-carousel .company {
-        min-width: 50%;
-        margin: 0 8px 0 8px;
+/* Responsive styling for 3 logos across */
+@media (max-width: 900px) {
+    .carousel-list li {
+        flex: 0 0 33.33%;
     }
 }
 
-.carousel-cell {
-    /* existing styles */
-    margin-right: 20px; /* Space between images */
+/* Responsive styling for 2 logos across */
+@media (max-width: 600px) {
+    .carousel-list li {
+        flex: 0 0 50%;
+    }
 }
+

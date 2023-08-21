@@ -1,40 +1,53 @@
-let span = document.getElementsByClassName('carousel-nav');
-let company = document.getElementsByClassName('company')
-let company_page = Math.ceil(company.length/4);
-let l = 0;
-let movePer = 51;
-let maxMove = 450;
+// #################################### CAROUSEL CODE
 
-// mobile_view	
-let mob_view = window.matchMedia("(max-width: 768px)");
-if (mob_view.matches)
-	{
-	movePer = 53;
-	maxMove = 950;
-	}
+const prevBtn = document.querySelector('.carousel-prev');
+const nextBtn = document.querySelector('.carousel-next');
+const content = document.querySelector('.carousel-content');
 
-let right_mover = ()=>{
-	l = l + movePer;
-	if (company == 1){l = 0; }
-	for(const i of company)
-	{
-		if (l > maxMove){l = l - movePer;}
-		i.style.left = '-' + l + '%';
-	}
+let logosOnScreen = 4; // Default value for larger screens
 
+window.addEventListener('resize', () => {
+    // Update the number of logos displayed based on the screen size.
+    if (window.innerWidth <= 600) {
+        logosOnScreen = 2;
+    } else if (window.innerWidth <= 900) {
+        logosOnScreen = 3;
+    } else {
+        logosOnScreen = 4;
+    }
+    checkButtons();
+});
+
+prevBtn.addEventListener('click', () => {
+    content.scrollLeft -= content.clientWidth; // Move by the visible width of the carousel.
+    checkButtons();
+});
+
+nextBtn.addEventListener('click', () => {
+    content.scrollLeft += content.clientWidth; // Move by the visible width of the carousel.
+    checkButtons();
+});
+
+// Disable/enable the buttons based on the scroll position.
+function checkButtons() {
+    const maxScroll = content.scrollWidth - content.clientWidth;
+
+    if (content.scrollLeft <= 0) {
+        prevBtn.disabled = true;
+    } else {
+        prevBtn.disabled = false;
+    }
+
+    if (content.scrollLeft >= maxScroll - (content.clientWidth * 0.1)) { // added a buffer
+        nextBtn.disabled = true;
+    } else {
+        nextBtn.disabled = false;
+    }
 }
-let left_mover = ()=>{
-	l = l - movePer;
-	if (l<=0){l = 0;}
-	for(const i of company){
-		if (company_page>1){
-			i.style.left = '-' + l + '%';
-		}
-	}
-}
 
-span[1].onclick = ()=>{right_mover();}
-span[0].onclick = ()=>{left_mover();}
+// Initialize with the current setting.
+window.dispatchEvent(new Event('resize'));
+
 
 
 // #################################### HIGHLIGHTING MENU ITEM
