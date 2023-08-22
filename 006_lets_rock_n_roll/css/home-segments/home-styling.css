@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -25,12 +25,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 850px) {
-    .home-inner {
-        flex-direction: column;
-    }
 }
 
 
@@ -110,6 +104,23 @@
     height: auto;
 }
 
+
+@media (max-width: 850px) {
+    .home-inner {
+        flex-direction: column-reverse;
+    }
+
+    .icon.d-flex.align-items-center.mb-2 {
+        justify-content: center;
+    }
+
+    .home-inner .profile-photo {
+        max-width: 250px; 
+        margin: 20px 0; /* Optional: You can adjust the vertical margin to ensure elements fit within the viewport */
+        padding-top: 30px;
+    }
+}
+
 /* Assuming you mentioned that 575px is the breakpoint */
 @media (max-width: 575px) {
     .home-inner {
@@ -118,9 +129,27 @@
         justify-content: space-around; /* Even space between items */
     }
 
+    .home-greeting h2 {
+        font-size: 24px;
+        color: white;
+    }
+
+    .home-greeting p {
+        margin-bottom: 0;
+        font-size: 16px;
+        /* max-width: 418px; */
+        margin-right: 0;
+        color: #cdcdcd;
+    }
+
+    .icon.d-flex.align-items-center.mb-2 {
+        justify-content: center;
+    }
+
     .home-inner .profile-photo {
-        max-width: 266px; /* 2/3rds of 400px */
+        max-width: 180px; /* 2/3rds of 400px */
         margin: 20px 0; /* Optional: You can adjust the vertical margin to ensure elements fit within the viewport */
+        padding-top: 30px;
     }
 
     .home-greeting {

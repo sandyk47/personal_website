@@ -49,3 +49,12 @@ nav .container ul li.active a{
 .navbar-buffer {
   padding-top: 60px;
 }
+
+/* Media query for smaller screens, assuming a breakpoint of 576px */
+@media (max-width: 576px) {
+  nav .container ul li a {
+      font-size: 14px;  /* Reduce the font size */
+      padding-left: 8px;  /* Reduce left padding */
+      padding-right: 8px;  /* Reduce right padding */
+  }
+}
