@@ -1,0 +1,54 @@
+.case_study_contents {
+    margin-top: 60px; /* Remove negative margin-top */
+    /* z-index: 2; Set a higher z-index */
+}
+
+.case_study_contents {
+    padding-top: 30px; /* Add this to remove the default margin */
+}
+
+
+.case-study-container {
+    max-width: 768px;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .case-study-container h2 {
+    color: #3b9188 !important;
+  }
+
+  .case-study-container em {
+    color: #3b9188;
+  }
+
+
+.cs_section_banner {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+
+.case-study-container ul li,
+.case-study-container ol li {
+  margin-bottom: 10px; /* Adjust the value to control the spacing */
+}
+
+
+/* Default styles for your images */
+.cs_section_banner img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing issues */
+}
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .cs_section_banner img {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+/* @media (max-width: 576px) {
+    } */

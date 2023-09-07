@@ -21,6 +21,7 @@
 @import url("home-segments/skills-styling.css");
 @import url("home-segments/about-styling.css");
 @import url("home-segments/portfolio.css");
+@import url("case_studies/case_studies.css");
 
 
 html {
@@ -39,6 +40,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    position: relative;
 
 
 
@@ -97,12 +99,13 @@ p {
 
 a {
     text-decoration: none;
-    color: #3bb5d7;
-    transition-duration: .3s;
+    color: #b6c869;
+    /* transition-duration: .3s; */
 }
 
 a:hover {
-    color: #b6c869;
+    color: #3ab6d7;
+    text-decoration: none; /* Remove underline */
 }
 
 li {
@@ -173,6 +176,15 @@ li {
     padding-top: 16px;
 }
 
+
+/* Solid border */
+hr.solid {
+    margin-top: 24px;
+    border-top: 2px solid #2b2b2b;
+  }
+
+
+
 /* Media query for smaller screens */
 @media (max-width: 576px) { /* you can adjust the breakpoint value */
     .section-title {
@@ -183,3 +195,4 @@ li {
         padding-right: 0; /* remove any right padding */
     }
 }
+
